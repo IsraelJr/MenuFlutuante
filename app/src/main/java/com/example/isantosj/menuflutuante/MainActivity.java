@@ -1,11 +1,14 @@
 package com.example.isantosj.menuflutuante;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Animation floatOpen, floatClose, floatRotClockwise, floatRotAntiClockwise;
     boolean isOpen = false;
 
+    EditText txtHello;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +56,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        txtHello = (EditText) findViewById(R.id.tvHello);
     }
 
     public void abrirOutro1(View view){
-
+        Intent intOutro1 = new Intent(this, Outro1Activity.class);
+        intOutro1.putExtra("textoExibir", txtHello.getText().toString());
+        startActivity(intOutro1);
+//        finish();
     }
 }

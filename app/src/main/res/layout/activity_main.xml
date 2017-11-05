@@ -5,16 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
-    android:paddingTop="16dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
     tools:context="com.example.isantosj.menuflutuante.MainActivity">
 
-    <TextView
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:hint="Digite aqui"
+        android:id="@+id/tvHello"
         />
 
     <android.support.design.widget.FloatingActionButton
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/float_margin_right"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="160dp"
         android:src="@drawable/ic_action_plus"
         android:elevation="6dp"
         android:id="@+id/float_outro2"
@@ -35,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/float_margin_right"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="80dp"
         android:src="@drawable/ic_action_plus"
         android:elevation="6dp"
         android:id="@+id/float_outro1"
@@ -49,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/float_margin_right"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="2dp"
         android:src="@drawable/ic_action_plus"
         android:elevation="6dp"
         android:id="@+id/float_plus"
